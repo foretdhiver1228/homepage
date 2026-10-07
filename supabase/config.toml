@@ -1,0 +1,3 @@
+[functions.guestbook]
+# Anonymous visitors may leave entries. Owner actions verify JWT + admin membership in code.
+verify_jwt = false
