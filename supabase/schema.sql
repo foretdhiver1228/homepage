@@ -19,7 +19,7 @@ grant execute on function public.is_home_admin() to anon, authenticated;
 create table public.posts (
   id uuid primary key default gen_random_uuid(),
   owner_id uuid not null default auth.uid() references auth.users(id),
-  kind text not null check (kind in ('diary','novel','art')),
+  kind text not null check (kind in ('diary','novel','art','update')),
   title text not null check (char_length(trim(title)) between 1 and 200),
   body text not null check (char_length(trim(body)) > 0),
   tags text[] not null default '{}',
