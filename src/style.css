@@ -12,3 +12,15 @@
 .oekaki-dialog{position:fixed;inset:12px;width:calc(100vw - 24px);height:calc(100dvh - 24px);max-width:1440px;max-height:none;margin:auto;padding:0;border:1px solid #b8a6cd;border-radius:8px;background:var(--paper);color:var(--ink);box-shadow:0 15px 80px #382a5555;overflow:hidden}
 .oekaki-dialog[open]{display:flex;flex-direction:column}.oekaki-dialog::backdrop{background:#36283b99}.oekaki-head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 18px;background:#e9e3f1;border-bottom:1px solid var(--line)}.oekaki-head h2{margin:0;font-size:17px}.oekaki-head p{margin:5px 0 0;font-size:12px;color:#746582}.oekaki-dialog iframe{width:100%;flex:1;min-height:0;border:0;background:#f2edf6}.draw-login{display:inline-block;border:1px solid var(--line);background:#eee6f4;border-radius:5px;padding:10px 15px;font-size:13px}.page-title .actions{margin-top:18px}
 @media(max-width:600px){.oekaki-dialog{inset:0;width:100vw;height:100dvh;border-radius:0}.oekaki-head{padding:10px}.oekaki-head p{font-size:11px}.oekaki-head button{flex-shrink:0}}
+
+/* Home-only patch notes. */
+.patch-history{margin-top:32px;padding-top:4px;border-top:1px dashed var(--line)}
+.patch-history .section-head .eyebrow{margin-bottom:8px}.patch-history .section-head button{font-size:11px;flex-shrink:0}
+.patch-list{border:1px solid var(--line);border-radius:5px;background:#fffdfb;overflow:hidden}
+.patch-entry+.patch-entry{border-top:1px dashed var(--line)}
+.patch-entry summary{cursor:pointer;padding:16px 18px;font-size:13px;line-height:1.8;overflow-wrap:anywhere}
+.patch-entry summary:hover{background:#f5f0f8}.patch-entry summary::marker{color:#a38ab7}
+.patch-entry time{font:10px monospace;color:var(--muted);margin-right:14px;white-space:nowrap}
+.patch-entry summary span{font-weight:600}.patch-body{white-space:pre-wrap;overflow-wrap:anywhere;padding:0 20px 20px 34px;font-size:12px;line-height:1.95;color:#786a86}
+.patch-more{display:block;margin:14px auto 0;font-size:11px}.manage-title{font-size:14px;margin:7px 0;overflow-wrap:anywhere}
+@media(max-width:620px){.patch-entry summary{padding:14px 12px}.patch-entry time{display:block;margin:0 0 4px 15px}.patch-body{padding:0 16px 18px}.patch-history .section-head{gap:8px}.patch-history .section-head h2{font-size:16px}}
